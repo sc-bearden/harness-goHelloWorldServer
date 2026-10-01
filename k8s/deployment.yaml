@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: go-hello-world
-          image: scbearden/harness-go-helloworld-server:<+artifact.tag>
+          image: <+artifacts.primary.image>
           imagePullPolicy: Always
           ports:
             - name: http
